@@ -11,6 +11,13 @@ format:
     logo: template/logo_marbec.png
     footer: <https://github.com/ClaraLerebourg/formation-quarto>
 ---
+# Pré-requis
+## Pré-requis
+
+Avoir installé quarto :
+https://quarto.org/docs/get-started/
+
+
 
 # Les bases
 ## Les bases
