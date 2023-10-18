@@ -22,7 +22,7 @@ Avoir installé quarto : https://quarto.org/docs/get-started/
 
 ## Les bases
 
-Composition d'un script Quarto :
+**Composition d'un script Quarto :**
 
 -   IDE Studio
 
@@ -36,76 +36,71 @@ Composition d'un script Quarto :
 
 -   Rendu
 
-## Les bases - IDE Studio 
+## Les bases - IDE Studio
 
-1.  Créer un fichier quarto
+**1.  Créer un fichier quarto**
 
-    1.  File \> New File \> Quarto document
-
-    2.  Renseigner : Titre / Auteur / HTML
-
-    3.  Create
-
-
-## Les bases - IDE Studio 
-
-1.  Créer un fichier quarto
-
-    1.  File \> New File \> Quarto document
+    1.  File > New File > Quarto document
 
     2.  Renseigner : Titre / Auteur / HTML
 
     3.  Create
 
-2.  IDE Studio
+## Les bases - IDE Studio
+
+**1.  Créer un fichier quarto**
+
+    1.  File > New File > Quarto document
+
+    2.  Renseigner : Titre / Auteur / HTML
+
+    3.  Create
+
+**2.  IDE Studio**
 ![](image/quarto_computations_1.1.png)
 
-## Les bases - IDE Studio 
+## Les bases - IDE Studio
 
-1.  Créer un fichier quarto
+**1.  Créer un fichier quarto**
 
-    1.  File \> New File \> Quarto document
-
-    2.  Renseigner : Titre / Auteur / HTML
-
-    3.  Create
-
-2.  IDE Studio
-![](image/quarto_computations_1.2.png)
-
-## Les bases - IDE Studio 
-
-1.  Créer un fichier quarto
-
-    1.  File \> New File \> Quarto document
+    1.  File > New File > Quarto document
 
     2.  Renseigner : Titre / Auteur / HTML
 
     3.  Create
 
-2.  IDE Studio
-![](image/quarto_computations_1.3.png)
+**2.  IDE Studio** ![](image/quarto_computations_1.2.png)
 
-## Les bases - IDE Studio 
+## Les bases - IDE Studio
 
-1.  Créer un fichier quarto
+**1.  Créer un fichier quarto**
 
-    1.  File \> New File \> Quarto document
+    1.  File > New File > Quarto document
 
     2.  Renseigner : Titre / Auteur / HTML
 
     3.  Create
 
-2.  IDE Studio
-![](image/quarto_computations_1.4.png)
+**2.  IDE Studio** ![](image/quarto_computations_1.3.png)
 
+## Les bases - IDE Studio
 
-## Les bases - IDE Studio 
+**1.  Créer un fichier quarto**
+
+    1.  File > New File > Quarto document
+
+    2.  Renseigner : Titre / Auteur / HTML
+
+    3.  Create
+
+**2.  IDE Studio** ![](image/quarto_computations_1.4.png)
+
+## Les bases - IDE Studio
 
 ![](image/quarto_computations_1.5.png)
 
-
 ## Les bases - Entête YAML
+
 ```{r}
 
 cat(" ---
@@ -220,7 +215,6 @@ kable(mpg) %>%
  kable_classic(c("hover", 
                  "condensed"),
                font_size = 14)
-
 ```
 
 ```{r}
@@ -283,5 +277,219 @@ The average city mileage of the cars in our data is `r mean_cty` and the average
 ```
 
 # Rapport quarto
+## Rapport quarto
+
+**Nous allons voir :**
+
+-   Les différents formats
+
+-   Numéros de lignes
+
+-   Numéros de sections
+
+-   Références
+
+## Rapport - Formats
+
+```{r}
+
+cat(" ---
+title: \"Quarto-formation\"
+authors: \"Mathieu Depetris, Clara Lerebourg, Julien Lebranchu\"
+Output_format : c(\"pdf\", \"html\", \"docx\")
+prefer-html: true
+editor: visual
+---
+")
+```
+
+Formats : html, pdf, docx
+
+-   Pour pdf (dans le terminal) : quarto install tinytex
+
+## Rapport - Numéro de lignes
+
+```{r}
+
+cat(" ---
+title: \"Quarto-formation\"
+authors: \"Mathieu Depetris, Clara Lerebourg, Julien Lebranchu\"
+format: 
+   pdf :
+      code-line-numbers : true
+---
+")
+```
+
+![](image/quarto_computations_6.png)
+
+## Rapport - Numéro de sections
+
+```{r}
+
+cat(" ---
+title: \"Quarto-formation\"
+authors: \"Mathieu Depetris, Clara Lerebourg, Julien Lebranchu\"
+toc: true
+number-sections: true
+format: 
+   html :
+      code-fold: true
+---
+")
+```
+
+![](image/quarto_computations_7.png)
+
+## Rapport - Références
+
+Ecrire /ci dans le document quarto et choisir "Citation... Reference to a source"
+
+![](image/quarto_computations_8.png)
+
+## Rapport - Références 
+
+Ecrire /ci dans le document quarto et choisir "Citation... Reference to a source"
+
+![](image/quarto_computations_9.png)
 
 # Présentation quarto
+
+## Créer un fichier
+
+**1.  Créer un fichier quarto**
+
+    1.  File > New File > Quarto document
+
+    2.  Renseigner : Titre / Auteur / HTML
+
+    3.  Create
+
+## Créer un fichier
+
+**2.  Créer des slides **
+
+Les diapositives sont définies par des titres de niveau 1 (#) pour un titre sur une page, ou de niveau 2  (##) :
+
+## Créer un fichier
+
+**2.  Créer des slides **
+
+Les diapositives sont définies par des titres de niveau 1 (#) pour un titre sur une page, ou de niveau 2  (##) :
+
+```{r}
+
+cat("---
+title: \"Habits\"
+author: \"John Doe\"
+format: revealjs
+---
+
+# In the morning
+
+## Getting up
+
+- Turn off alarm
+- Get out of bed
+
+## Breakfast
+
+- Eat eggs
+- Drink coffee
+")
+```
+
+
+## Modifier présentation
+
+**Faire des listes - Incremental **
+
+```{r}
+
+cat("
+::: {.incremental}
+
+- Eat spaghetti
+- Drink wine
+
+:::
+")
+```
+
+::: {.incremental}
+
+- Eat spaghetti
+- Drink wine
+
+:::
+
+## Modifier présentation
+
+**Faire des listes - Non incremental **
+
+```{r}
+
+cat("
+::: {.nonincremental}
+
+- Eat spaghetti
+- Drink wine
+
+:::
+")
+```
+
+::: {.nonincremental}
+
+- Eat spaghetti
+- Drink wine
+
+:::
+
+## Modifier présentation
+
+**Plusieurs colonnes **
+
+```{r}
+
+cat("
+:::: {.columns}
+
+::: {.column width=\"40%\"}
+contents...
+:::
+
+::: {.column width=\"60%\"}
+contents...
+:::
+
+::::
+")
+```
+
+:::: {.columns}
+
+::: {.column width="40%"}
+contents...
+:::
+
+::: {.column width="60%"}
+contents...
+:::
+
+::::
+
+
+## Modifier présentation
+
+**Insérer une image **
+
+```{r}
+
+cat("
+![](image/quarto_computations_1.5.png)
+")
+```
+
+![](image/quarto_computations_1.5.png)
+
