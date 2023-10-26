@@ -18,6 +18,8 @@ format:
 
 Avoir installé quarto : https://quarto.org/docs/get-started/
 
+
+
 # Les bases
 
 ## Les bases
