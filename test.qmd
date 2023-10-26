@@ -1,8 +1,23 @@
 ---
-title: "test"
-format: revealjs
-editor: visual
+title: "Formation R Quarto"
+authors: "Mathieu Depetris, Clara Lerebourg, Julien Lebranchu"
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    theme: template/theme_perso.scss
+    logo: template/logo_marbec.png
+    footer: <https://github.com/ClaraLerebourg/formation-quarto>
 ---
+
+# Pré-requis
+
+## Pré-requis
+
+Avoir installé quarto : https://quarto.org/docs/get-started/
+
 
 ## Quarto
 
