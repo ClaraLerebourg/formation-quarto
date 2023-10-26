@@ -1,0 +1,112 @@
+---
+title: "Formation R Quarto"
+authors: "Mathieu Depetris, Clara Lerebourg, Julien Lebranchu"
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    theme: template/theme_perso.scss
+    logo: template/logo_marbec.png
+    footer: <https://github.com/ClaraLerebourg/formation-quarto>
+---
+
+# Pré-requis
+
+## Pré-requis
+
+Avoir installé quarto : https://quarto.org/docs/get-started/
+
+# Les bases
+
+## Les bases
+
+**Composition d'un script Quarto :**
+
+-   IDE Studio
+
+-   Entête YAML
+
+-   Code chunks
+
+-   Figures et tableaux
+
+-   Texte
+
+-   Rendu
+
+## Les bases - IDE Studio
+
+**1. Créer un fichier quarto**
+
+``` text
+1.  File > New File > Quarto document
+
+2.  Renseigner : Titre / Auteur / HTML
+
+3.  Create
+```
+
+## Les bases - IDE Studio
+
+**1. Créer un fichier quarto**
+
+``` text         
+1.  File > New File > Quarto document
+
+2.  Renseigner : Titre / Auteur / HTML
+
+3.  Create
+```
+
+**2. IDE Studio** ![](images/quarto_computations_1.1.png)
+
+## Les bases - IDE Studio
+
+**1. Créer un fichier quarto**
+
+``` text        
+1.  File > New File > Quarto document
+
+2.  Renseigner : Titre / Auteur / HTML
+
+3.  Create
+```
+
+**2. IDE Studio** 
+![](images/quarto_computations_1.2.png)
+
+## Les bases - IDE Studio
+
+**1. Créer un fichier quarto**
+
+``` text         
+1.  File > New File > Quarto document
+
+2.  Renseigner : Titre / Auteur / HTML
+
+3.  Create
+```
+
+**2. IDE Studio** 
+![](images/quarto_computations_1.3.png)
+
+## Les bases - IDE Studio
+
+**1. Créer un fichier quarto**
+
+``` text          
+1.  File > New File > Quarto document
+
+2.  Renseigner : Titre / Auteur / HTML
+
+3.  Create
+```
+
+**2. IDE Studio** 
+![](images/quarto_computations_1.4.png)
+
+## Les bases - IDE Studio
+
+![](images/quarto_computations_1.5.png)
